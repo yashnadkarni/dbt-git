@@ -1,0 +1,16 @@
+version: 2
+models:
+  - name: completed_order_details
+    description: "A model that contains completed order details."
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+      - name: customer_id
+        tests:
+          - not_null
+      - name: customer_name
+      - name: order_date
+      - name: status
+      - name: amount_dollars
